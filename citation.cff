@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: AnalisisCR10_SINDATOS
+message: "Si usas este paquete reproducible, por favor cita esta versión."
+type: software
+authors:
+  - family-names: Sanchiz Torres
+    given-names: Alejandro
+version: "2025-08-11"
+date-released: 2025-08-11
+license: Apache-2.0
+repository-code: "https://github.com/alexsanchiz/AnalisisCR10_SINDATOS"
+doi: 10.5281/zenodo.17012682
