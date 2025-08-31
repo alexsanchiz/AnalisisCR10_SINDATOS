@@ -1,0 +1,85 @@
+ANALISIS ESTADISTICO AVANZADO
+=============================
+Archivo: CR10_NOV2024.csv 
+Fecha: 1754980634 
+Observaciones: 25369 
+
+TASAS DE DEFECTO:
+CLARO : 0.292 %
+PLIEGUEPEQ : 0.863 %
+PLIEGUEGR : 0.102 %
+DEFECTOS : 1.25 %
+
+MODELOS GLMM AJUSTADOS:
+
+Modelo para CLARO :
+Formula: CLARO ~ Q_S_CAZOS + Q_S_TIJERAS + Q_CAZOS + T_S_CAZOS + T_S_TIJERAS +      (1 | SECCION) 
+Coeficientes significativos (p < 0.05):
+   (Intercept) : coef = -6.1436 , p = 0 
+   Q_S_CAZOS : coef = 0.4616 , p = 0.0004 
+   T_S_TIJERAS : coef = -0.3087 , p = 0.0118 
+
+Modelo para PLIEGUEPEQ :
+Formula: PLIEGUEPEQ ~ Q_S_CAZOS + Q_S_TIJERAS + Q_CAZOS + T_S_CAZOS +      T_S_TIJERAS + (1 | SECCION) 
+Coeficientes significativos (p < 0.05):
+   (Intercept) : coef = -4.8793 , p = 0 
+   Q_S_CAZOS : coef = 0.3245 , p = 0 
+   Q_S_TIJERAS : coef = 0.4159 , p = 0 
+   Q_CAZOS : coef = 0.2339 , p = 0.0005 
+   T_S_TIJERAS : coef = 0.1743 , p = 0.0203 
+
+Modelo para PLIEGUEGR :
+Formula: PLIEGUEGR ~ Q_S_CAZOS + Q_S_TIJERAS + Q_CAZOS + T_S_CAZOS + T_S_TIJERAS +      (1 | SECCION) 
+Coeficientes significativos (p < 0.05):
+   (Intercept) : coef = -7.2816 , p = 0 
+   Q_S_CAZOS : coef = -0.6089 , p = 0.0097 
+   Q_S_TIJERAS : coef = -0.3881 , p = 0.0374 
+   T_S_TIJERAS : coef = 0.5016 , p = 0.0245 
+
+FACTORES VIF:
+Q_S_CAZOS : 1.719 
+Q_S_TIJERAS : 1.825 
+Q_CAZOS : 1.279 
+T_S_CAZOS : 1.146 
+T_S_TIJERAS : 3.74 
+T_CAZOS : 3.456 
+XPOS : 1.205 
+YPOS : 1.152 
+XY : 1.458 
+LONGITUD : 3.252 
+DIAMETRO : 1.445 
+VELOCIDAD : 1.172 
+DIAMETRO_MEDIO : 2.444 
+OVALIDAD : 2.804 
+ASIMETRIA : 1.118 
+VERTICALIDAD : 1.31 
+
+VALIDACION CRUZADA (ROBUSTEZ):
+Modelo para CLARO :
+K-folds: 5 | Folds validos: 5 
+Casos positivos: 74 
+AUC CV:  0.682  ±  0.071 
+Precision CV:  0.006  ±  0.005 
+Recall CV:  0.152  ±  0.056 
+F1-Score CV:  0.012  ±  0.009 
+
+Modelo para PLIEGUEPEQ :
+K-folds: 5 | Folds validos: 5 
+Casos positivos: 219 
+AUC CV:  0.625  ±  0.041 
+Precision CV:  0.032  ±  0.013 
+Recall CV:  0.164  ±  0.058 
+F1-Score CV:  0.053  ±  0.021 
+
+Modelo para PLIEGUEGR :
+K-folds: 5 | Folds validos: 5 
+Casos positivos: 26 
+AUC CV:  0.729  ±  0.085 
+Precision CV:  0.003  ±  0.002 
+Recall CV:  0.331  ±  0.224 
+F1-Score CV:  0.006  ±  0.005 
+
+
+VALIDACION ALTERNATIVA (CASOS RAROS):
+Modelo para PLIEGUEGR :
+

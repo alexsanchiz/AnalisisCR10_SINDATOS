@@ -1,0 +1,98 @@
+CALIBRACION DE UMBRALES Y RELIABILITY
+=====================================
+Archivo: CR10_FEB2025.csv 
+Fecha: 20250812_094417 
+Observaciones: 28875 
+
+DEFECTO: CLARO 
+=================
+UMBRALES ÓPTIMOS:
+Youden:            0.0007 
+Max Precision:     0.0100 
+Max F1:            0.0100 
+Max Recall (Prec>0.1): 0.0007 
+RECOMENDADO:       0.0100 ( Balance F1 )
+
+MÉTRICAS EN UMBRALES:
+Youden - Sens: 0.852 Spec: 0.533 
+Precision - Max: 0.000 
+F1 - Max: 0.000 
+Recall Constrained:  
+
+ANÁLISIS DE CALIBRACIÓN:
+Brier Score: 0.0009 
+Hosmer-Lemeshow p-value: 0.1095 
+Estado calibración: BIEN CALIBRADO 
+Casos positivos: 27 
+
+BINS DE CALIBRACIÓN:
+Bin 1 - Prob media: 0.000 Tasa obs: 0.000 N: 18639 
+Bin 2 - Prob media: 0.001 Tasa obs: 0.001 N: 7104 
+Bin 3 - Prob media: 0.002 Tasa obs: 0.002 N: 2221 
+Bin 4 - Prob media: 0.003 Tasa obs: 0.003 N: 604 
+Bin 5 - Prob media: 0.004 Tasa obs: 0.012 N: 168 
+Bin 6 - Prob media: 0.005 Tasa obs: 0.014 N: 69 
+Bin 7 - Prob media: 0.006 Tasa obs: 0.000 N: 35 
+Bin 8 - Prob media: 0.007 Tasa obs: 0.000 N: 18 
+Bin 9 - Prob media: 0.008 Tasa obs: 0.083 N: 12 
+Bin 10 - Prob media: 0.009 Tasa obs: 0.000 N: 5 
+
+DEFECTO: PLIEGUEPEQ 
+=================
+UMBRALES ÓPTIMOS:
+Youden:            0.0057 
+Max Precision:     0.0100 
+Max F1:            0.0100 
+Max Recall (Prec>0.1): 0.0057 
+RECOMENDADO:       0.0057 ( Balance Youden )
+
+MÉTRICAS EN UMBRALES:
+Youden - Sens: 0.641 Spec: 0.632 
+Precision - Max: 0.014 
+F1 - Max: 0.027 
+Recall Constrained:  
+
+ANÁLISIS DE CALIBRACIÓN:
+Brier Score: 0.0053 
+Hosmer-Lemeshow p-value: 0.3412 
+Estado calibración: BIEN CALIBRADO 
+Casos positivos: 153 
+
+BINS DE CALIBRACIÓN:
+Bin 1 - Prob media: 0.002 Tasa obs: 0.001 N: 5813 
+Bin 2 - Prob media: 0.003 Tasa obs: 0.003 N: 5386 
+Bin 3 - Prob media: 0.005 Tasa obs: 0.005 N: 7443 
+Bin 4 - Prob media: 0.006 Tasa obs: 0.006 N: 4584 
+Bin 5 - Prob media: 0.008 Tasa obs: 0.009 N: 1746 
+Bin 6 - Prob media: 0.010 Tasa obs: 0.007 N: 1505 
+Bin 7 - Prob media: 0.012 Tasa obs: 0.015 N: 1445 
+Bin 8 - Prob media: 0.014 Tasa obs: 0.019 N: 785 
+Bin 9 - Prob media: 0.015 Tasa obs: 0.025 N: 157 
+Bin 10 - Prob media: 0.017 Tasa obs: 0.000 N: 11 
+
+DEFECTO: PLIEGUEGR 
+=================
+UMBRALES ÓPTIMOS:
+Youden:            0.0003 
+Max Precision:     0.0100 
+Max F1:            0.0100 
+Max Recall (Prec>0.1): 0.0003 
+RECOMENDADO:       0.0003 ( Detección (pocos casos) )
+
+MÉTRICAS EN UMBRALES:
+Youden - Sens: 1.000 Spec: 0.873 
+Precision - Max: 0.000 
+F1 - Max: 0.000 
+Recall Constrained:  
+
+ANÁLISIS DE CALIBRACIÓN:
+Brier Score: 0.0002 
+Hosmer-Lemeshow p-value: 0.5830 
+Estado calibración: BIEN CALIBRADO 
+Casos positivos: 5 
+
+BINS DE CALIBRACIÓN:
+Bin 1 - Prob media: 0.000 Tasa obs: 0.000 N: 28866 
+Bin 2 - Prob media: 0.002 Tasa obs: 0.000 N: 3 
+Bin 3 - Prob media: 0.005 Tasa obs: 0.000 N: 6 
+

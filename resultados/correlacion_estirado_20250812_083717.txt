@@ -1,0 +1,12 @@
+ANALISIS DE CORRELACION ESTIRADO-PLIEGUES
+==========================================
+Archivo principal: CR10_NOV2024.csv 
+Archivo estirado: ESTIRADOS.csv
+Fecha analisis: 1754980638 
+
+CORRELACIONES PRINCIPALES:
+==========================
+Estirado vs Pliegue Pequeño: 0.018 
+Estirado vs Pliegue Grande: 0.101 
+Estirado vs Defectos Totales: 0.038 
+Observaciones analizadas: 13426 

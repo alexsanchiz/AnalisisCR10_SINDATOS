@@ -1,0 +1,9 @@
+ANALISIS DE CORRELACION ESTIRADO-PLIEGUES
+==========================================
+Archivo principal: CR10_FEB2025.csv 
+Archivo estirado: ESTIRADOS.csv
+Fecha analisis: 1754980536 
+
+CORRELACIONES PRINCIPALES:
+==========================
+Observaciones analizadas: 

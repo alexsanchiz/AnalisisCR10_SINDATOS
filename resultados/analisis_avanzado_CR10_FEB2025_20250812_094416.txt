@@ -1,0 +1,85 @@
+ANALISIS ESTADISTICO AVANZADO
+=============================
+Archivo: CR10_FEB2025.csv 
+Fecha: 1754984656 
+Observaciones: 28875 
+
+TASAS DE DEFECTO:
+CLARO : 0.094 %
+PLIEGUEPEQ : 0.53 %
+PLIEGUEGR : 0.017 %
+DEFECTOS : 0.641 %
+
+MODELOS GLMM AJUSTADOS:
+
+Modelo para CLARO :
+Formula: CLARO ~ Q_S_CAZOS + Q_S_TIJERAS + Q_CAZOS + T_S_CAZOS + T_S_TIJERAS +      (1 | SECCION) 
+Coeficientes significativos (p < 0.05):
+   (Intercept) : coef = -7.424 , p = 0 
+   T_S_TIJERAS : coef = -1.0608 , p = 0.0013 
+
+Modelo para PLIEGUEPEQ :
+Formula: PLIEGUEPEQ ~ Q_S_CAZOS + Q_S_TIJERAS + Q_CAZOS + T_S_CAZOS +      T_S_TIJERAS + (1 | SECCION) 
+Coeficientes significativos (p < 0.05):
+   (Intercept) : coef = -5.4806 , p = 0 
+
+Modelo para PLIEGUEGR :
+Formula: PLIEGUEGR ~ Q_S_CAZOS + Q_S_TIJERAS + Q_CAZOS + T_S_CAZOS + T_S_TIJERAS +      (1 | SECCION) 
+Coeficientes significativos (p < 0.05):
+   (Intercept) : coef = -9.3727 , p = 0 
+
+ANALISIS ROC:
+CLARO - AUC: 0.737 
+PLIEGUEPEQ - AUC: 0.693 
+PLIEGUEGR - AUC: 0.925 
+
+FACTORES VIF:
+Q_S_CAZOS : 1.603 
+Q_S_TIJERAS : 1.61 
+Q_CAZOS : 1.107 
+T_S_CAZOS : 2.029 
+T_S_TIJERAS : 3.533 
+T_CAZOS : 2.565 
+XPOS : 1.134 
+YPOS : 1.104 
+XY : 1.049 
+LONGITUD : 1.589 
+DIAMETRO : 1.363 
+VELOCIDAD : 1.326 
+DIAMETRO_MEDIO : 1.361 
+OVALIDAD : 1.529 
+ASIMETRIA : 1.153 
+VERTICALIDAD : 1.362 
+
+VALIDACION CRUZADA (ROBUSTEZ):
+Modelo para CLARO :
+K-folds: 5 | Folds validos: 5 
+Casos positivos: 27 
+AUC CV:  0.653  ±  0.065 
+Precision CV:  0.002  ±  0.001 
+Recall CV:  0.224  ±  0.054 
+F1-Score CV:  0.004  ±  0.002 
+
+Modelo para PLIEGUEPEQ :
+K-folds: 5 | Folds validos: 5 
+Casos positivos: 153 
+AUC CV:  0.651  ±  0.034 
+Precision CV:  0.01  ±  0.002 
+Recall CV:  0.181  ±  0.057 
+F1-Score CV:  0.02  ±  0.003 
+
+Modelo para PLIEGUEGR :
+K-folds: 5 | Folds validos: 4 
+Casos positivos: 5 
+AUC CV:  0.697  ±  0.152 
+Precision CV:  0  ±  0 
+Recall CV:  0  ±  0 
+F1-Score CV:  0  ±  0 
+
+
+VALIDACION ALTERNATIVA (CASOS RAROS):
+Modelo para CLARO :
+
+Modelo para PLIEGUEGR :
+LOOCV - Recall:  0 
+
