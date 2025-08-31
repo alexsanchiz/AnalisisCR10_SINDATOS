@@ -1,4 +1,6 @@
-# Sistema de Análisis Estadístico - Control de Calidad IS
+# Sistema de Análisis Estadístico en máquina IS
+
+DATOS ELIMINADOS PARA PODER PUBLICAR
 
 ## Descripción General
 
@@ -21,8 +23,6 @@ El sistema está organizado en **14 scripts numerados secuencialmente** que conf
 7. **Análisis Temporal Avanzado** (06_): Efectos de lags temporales en estirado
 8. **Calibración de Umbrales** (07_): Optimización de umbrales por tipo de defecto
 9. **Gráficos Extendidos** (08_): Visualizaciones avanzadas y resumen ejecutivo
-10. **Gráficos PNG Individuales** (09_): Extracción de gráficos individuales en formato PNG
-11. **Extracción LaTeX** (10_): Generación de figuras optimizadas para documentos LaTeX
 
 **Control de Errores**: Manejo robusto de errores con continuación del pipeline, logging detallado de cada etapa, y generación de reportes incluso con datos parciales.
 
@@ -188,52 +188,6 @@ El sistema está organizado en **14 scripts numerados secuencialmente** que conf
 - **Comparación de Modelos**: AUC GAM vs lineales por defecto
 
 **Integración**: Complementa visualizaciones básicas con análisis específicos del nuevo enfoque por modelo.
-
-### 09_GRAFICOS_INDIVIDUALES_PNG.R - Gráficos PNG para Documentación
-**Propósito**: Extraer cada gráfico como archivo PNG individual de alta resolución para uso en documentación y presentaciones.
-
-**Funcionalidades**:
-- **Gráficos PNG Individuales**: Cada visualización como archivo PNG separado de 1200x900 píxeles
-- **Alta Resolución**: 150 DPI con renderizado Cairo para calidad profesional
-- **Nomenclatura Sistemática**: Archivos numerados (01_distribucion_defectos.png, 02_curvas_roc.png, etc.)
-- **Directorio Organizado**: Carpeta específica `graficos_png/` separada de PDFs, con timestamp para cada análisis
-- **Archivo de Referencias LaTeX**: Plantilla .tex con código completo para inclusión
-- **7+ Gráficos Estándar**: Distribución, ROC, matrices confusión, efectos marginales, PCA, correlaciones, interacciones
-
-**Ventajas para Documentación**:
-- Inserción directa en presentaciones PowerPoint/Google Slides
-- Compatible con editores de documentos (Word, LibreOffice)
-- Fácil visualización y selección individual
-- Tamaño optimizado para impresión y pantalla
-
-### 10_EXTRACTOR_GRAFICOS_LATEX.R - Figuras Optimizadas LaTeX
-**Propósito**: Generar figuras de calidad académica específicamente optimizadas para documentos LaTeX.
-
-**Funcionalidades**:
-- **PDFs Vectoriales**: Gráficos en formato PDF vectorial de alta calidad (300 DPI)
-- **Tipografía LaTeX**: Fuentes serif compatibles con documentos académicos
-- **Dimensiones Optimizadas**: Tamaños estándar para artículos (6"x4", 8"x6", 10"x8")
-- **Archivo Maestro LaTeX**: Código .tex completo con todas las figuras
-- **Referencias Cruzadas**: Sistema de labels automático (\\ref{fig:distribucion_defectos})
-- **5 Figuras Académicas Principales**:
-  - Figura 1: Distribución de defectos con ggplot2 profesional
-  - Figura 2: Curvas ROC combinadas con leyenda optimizada
-  - Figura 3: Análisis PCA completo (4 subgráficos)
-  - Figura 4: Matrices de correlación con clustering jerárquico
-  - Figura 5: Métricas por modelo (si análisis segmentado disponible)
-
-**Ventajas Académicas**:
-- Integración directa en artículos científicos
-- Calidad editorial para revistas indexadas
-- Consistencia tipográfica con el documento
-- Escalabilidad sin pérdida de calidad
-- Referencias cruzadas automáticas
-
-**Archivos Generados**:
-- `figuras_maestro.tex`: Código LaTeX completo (en `graficos_latex/`)
-- `README.txt`: Instrucciones de uso
-- PDFs individuales numerados y nombrados sistemáticamente
-- **Carpeta Separada**: `graficos_latex/` independiente de `graficos/` para PDFs combinados
 
 ---
 
